@@ -1,15 +1,15 @@
 package com.tour.hero.entity;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "hero")
+@Document("hero")
 public class Hero {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
+//    @Column(name = "name")
     private String name;
 
     public Long getId() {

@@ -1,7 +1,7 @@
 spring:
     application:
         name: hero
-    datasource:
-        url: jdbc:postgresql://localhost:5432/alhassan
-        username: postgres
-        password: root
+    data:
+        mongodb:
+          uri:
+          database:
